@@ -196,6 +196,7 @@ DEPENDENCIES
   growl (= 1.0.3)
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+  minitest
   pg (= 0.15.1)
   rails
   rails_12factor (= 0.0.2)
