@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> <%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag "application", media: "all",
+                          "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+<%= render('layouts/shim') %>
 </head>
 <body>
-
-<%= yield %>
-
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <%= render('layouts/header') %>
+</header>
+<div class="container">
+  <%= yield %>
+  <%= render('layouts/footer') %>
+</div>
 </body>
 </html>
