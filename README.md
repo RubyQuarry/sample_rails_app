@@ -1,4 +1,3 @@
-== README
 Check it out [here](https://peaceful-wave-3646.herokuapp.com)
 
 
