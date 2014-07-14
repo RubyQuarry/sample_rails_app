@@ -1,6 +1,7 @@
 @import "bootstrap";
 
 
+
 $lightGray: #999;
 
 html{
@@ -171,4 +172,17 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+.users{
+  list-style: none;
+  margin: 0;
+  li{
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid #666666;
+    &:last-child{
+      border-bottom: 1px solid #2E2F30;
+    }
+  }
 }
